@@ -6,3 +6,4 @@ brouillons/
 # secrets : jamais sur GitHub
 .env
 notes.txt
+*.log
