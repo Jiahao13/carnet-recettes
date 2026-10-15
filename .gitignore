@@ -5,3 +5,4 @@ liste-courses.txt
 brouillons/
 # secrets : jamais sur GitHub
 .env
+notes.txt
