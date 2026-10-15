@@ -1,0 +1,7 @@
+# personnel
+liste-courses.txt
+# temporaire
+*.tmp
+brouillons/
+# secrets : jamais sur GitHub
+.env
