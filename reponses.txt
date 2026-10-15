@@ -22,8 +22,6 @@ héberge des dépôts Git.
 Q4. Git, c'est le traitement de texte avec l'historique des versions de mon
 document ; GitHub, c'est le dossier partagé en ligne où je dépose ce
 document pour que d'autres le lisent et l'améliorent.
-Mission 2A : avant le push GitHub affiche 2 commits, après il en affichera 5.
-Mission 2B : git commit n'enregistre que le contenu du panier au moment du git add. La ligne ajoutée après n'était pas au panier, donc elle est restée seulement dans mon dossier et GitHub ne l'a pas vue.
 
 Mission 2A : avant le push GitHub affichait 2 commits, après il en affiche 5.
 
@@ -34,14 +32,23 @@ seulement dans mon dossier et GitHub ne l'a pas vue.
 Q5. Le panier (index) permet de choisir exactement ce qui part dans un commit.
 Utile quand j'ai modifié plusieurs fichiers pour des sujets différents : je
 fais un commit par sujet, ou je laisse de côté un fichier perso ou pas fini.
-(IA utilisée : Claude, pour rédiger la réponse)
 
 Q6. (a) fix(tiramisu): correction d'une faute
 (b) feat(plats): ajout de la soupe
 (c) style(readme): mise en forme du README
-(IA utilisée : Claude, pour rédiger les messages)
 
 Q7. "ahead of 'origin/main' by 1 commit" veut dire que ma branche locale a un
 commit que la copie de GitHub n'a pas encore. GitHub ne voyait pas les
 crêpes parce qu'un commit reste local tant qu'on ne fait pas git push.
-(IA utilisée : Claude, pour rédiger la réponse)
+
+Q8. Un dépôt privé peut devenir public, être partagé avec des collaborateurs
+ou être cloné sur d'autres machines, et un secret poussé reste dans
+l'historique. Un mot de passe n'a rien à faire dans un dépôt, privé ou non.
+
+Q9. Le .gitignore est versionné pour que toute l'équipe applique les mêmes
+règles : toute personne qui clone le dépôt le récupère avec.
+
+Q10. Il faudrait considérer le mot de passe comme compromis : le changer ou
+le révoquer tout de suite. git rm --cached n'efface pas l'historique, la
+note reste visible dans les anciens commits. On pourrait réécrire
+l'historique, mais le changement du mot de passe reste indispensable.
