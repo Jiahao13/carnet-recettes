@@ -1,0 +1,47 @@
+Q1. Chaque commit est signé avec le nom et l'e-mail de user.name / user.email.
+GitHub relie un commit à un compte en comparant cet e-mail avec ceux du compte.
+Si l'adresse est différente, le commit s'affiche sans photo de profil ni lien
+vers mon compte, avec un auteur "inconnu", et il ne compte pas dans mon
+graphique de contributions.
+
+Q2. GitHub n'accepte plus le mot de passe dans le terminal. Un jeton est plus
+sûr : il ne donne que les droits cochés (ici "repo"), on peut le révoquer sans
+changer son mot de passe, et s'il fuite, le compte reste protégé.
+Avec une date d'expiration, un jeton oublié ou volé devient inutilisable tout
+seul, ce qui limite les dégâts.
+
+Q3. (a) Vrai : un commit est enregistré dans le dépôt local (.git), il n'a
+pas besoin d'internet.
+(b) Faux : Git est un logiciel local, un compte GitHub n'est utile que pour
+héberger et partager.
+(c) Faux : un commit reste chez moi tant que je ne fais pas git push.
+(d) Vrai : une équipe peut utiliser GitLab, Bitbucket ou un serveur à elle.
+(e) Vrai : Git est installé sur la machine, GitHub est un site web qui
+héberge des dépôts Git.
+
+Q4. Git, c'est le traitement de texte avec l'historique des versions de mon
+document ; GitHub, c'est le dossier partagé en ligne où je dépose ce
+document pour que d'autres le lisent et l'améliorent.
+Mission 2A : avant le push GitHub affiche 2 commits, après il en affichera 5.
+Mission 2B : git commit n'enregistre que le contenu du panier au moment du git add. La ligne ajoutée après n'était pas au panier, donc elle est restée seulement dans mon dossier et GitHub ne l'a pas vue.
+
+Mission 2A : avant le push GitHub affichait 2 commits, après il en affiche 5.
+
+Mission 2B : git commit n'enregistre que le contenu du panier au moment du
+git add. La ligne ajoutée après n'était pas au panier, donc elle est restée
+seulement dans mon dossier et GitHub ne l'a pas vue.
+
+Q5. Le panier (index) permet de choisir exactement ce qui part dans un commit.
+Utile quand j'ai modifié plusieurs fichiers pour des sujets différents : je
+fais un commit par sujet, ou je laisse de côté un fichier perso ou pas fini.
+(IA utilisée : Claude, pour rédiger la réponse)
+
+Q6. (a) fix(tiramisu): correction d'une faute
+(b) feat(plats): ajout de la soupe
+(c) style(readme): mise en forme du README
+(IA utilisée : Claude, pour rédiger les messages)
+
+Q7. "ahead of 'origin/main' by 1 commit" veut dire que ma branche locale a un
+commit que la copie de GitHub n'a pas encore. GitHub ne voyait pas les
+crêpes parce qu'un commit reste local tant qu'on ne fait pas git push.
+(IA utilisée : Claude, pour rédiger la réponse)
